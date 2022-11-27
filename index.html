@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>My portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#services">Merhaba</a></li>
+            <li><a href="#portfolio">Projelerim</a></li>
+            <li><a href="#contact">İletişime geç</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Web Developer</p>
+          <h1>
+            Merhaba ben <br />
+            <span>Berk</span> Karabacak
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/berk.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">Hakkımda</h1>
+            <p>
+              13 yaşında bir kodlama
+              öğrencisiyim.Python,html,css,js,bootstrap,react gibi yazılım
+              dilleri gördüm.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Beceriler
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Deneyim</p>
+              <p class="tab-links" onclick="opentab('education')">Öğrenim</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>2020-2021</span><br />Python</li>
+                <li><span>2021-2022</span><br />HTML - css</li>
+                <li><span>2022</span><br />js,Bootstrap,DOM</li>
+                <li>
+                  <span>2022</span><br />HTML-css-js <br /><span>
+                    ileri seviye</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Bilişim School(öğrenci)</span><br />2020-2022</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016-2018</span><br />İlkokul</li>
+                <li><span>2018-2021</span><br />Ortaokul</li>
+                <li><span>2022</span><br />Lise</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Merhaba</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Ben Kimim?</h2>
+            <p>
+              Ben Berk Karabacak 13 yaşındayım Hollandada annem babam ve kardeşlerimle yaşıyorum.Basketbol oynamayı,kodlamayı ve oyun oynamayı severim.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Hangi tarafta olmayı planlıyorum?</h2>
+            <p>Ben Frontend Web developer tarafındayım.Gennelikle Web Design'a ilgim var.</p>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Büyüyünce ne olmayı planlıyorum?</h2>
+            <p>Büyüyünce bir Web Developer olmak istiyorum ama yıldızlara olan ilgimden dolayı bir gök bilimcisi de olmak istiyorum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projelerim</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/images/scratch.png" />
+            <div class="layer">
+              <h3>Scratch</h3>
+              <p>
+                İlk projelerim olarak Scratch ile Snake game,Pac-Man,Pong gibi
+                projeler yaptım.
+              </p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/python.png" />
+            <div class="layer">
+              <h3>Python</h3>
+              <p>
+                İkinci projem olarak Python ve tkinter-tkinter messagebox
+                kullanarak bir rastgele şifre oluşturan proje yaptım.
+              </p>
+            </div>
+          </div>
+            <div class="work">
+              <img src="/images/hcj.jpg" />
+              <div class="layer">
+                <h3>HTML-css-js</h3>
+                <p>
+                  Şu anda çalıştığım proje bir portfolio sitesi.HTML,css,js
+                  kullanarak bir portfolio sitesi yaptım.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Benimle iletişime geç</h1>
+            <p><i class="fa-regular fa-paper-plane"></i>berkkarabck@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>+31 6 48173587</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/berk-karabacak-700479222/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Adın" required>
+              <input type="email" name="email" placeholder="e-mail adresin" required>
+              <textarea name="Message" rows="6" placeholder="Mesajın"></textarea>
+              <button type="submit" class="btn btn2">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Berk.Berk Karabacak tarafından yapılmıştır</p>
+      </div>
+    </div>
+  </body>
+  <script src="/js/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/18ab61fed2.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
